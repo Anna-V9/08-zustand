@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/trani/Project/06-notehub-nextjs/src/app/notes/%5Bid%5D/NoteDetails.module.css"],"sourcesContent":[".container {\r\n  padding: 20px;\r\n}\r\n\r\n.toolbar {\r\n  display: flex;\r\n  justify-content: space-between;\r\n  align-items: center;\r\n  margin-bottom: 20px;\r\n}\r\n\r\n.createButton {\r\n  padding: 8px 12px;\r\n  background-color: #0070f3;\r\n  color: white;\r\n  border: none;\r\n  border-radius: 5px;\r\n  cursor: pointer;\r\n}\r\n\r\n.createButton:hover {\r\n  background-color: #005bb5;\r\n}\r\n\r\n.notesGrid {\r\n  display: grid;\r\n  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));\r\n  gap: 20px;\r\n}"],"names":[],"mappings":"AAAA;;;;AAIA;;;;;;;AAOA;;;;;;;;;AASA;;;;AAIA"}}]
+}

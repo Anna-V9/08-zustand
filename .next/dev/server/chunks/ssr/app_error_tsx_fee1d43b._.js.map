@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/trani/Project/06-notehub-nextjs/app/error.tsx"],"sourcesContent":["'use client';\r\ninterface ErrorProps {\r\n  error: Error;\r\n}\r\n\r\nexport default function Error({ error }: ErrorProps) {\r\n  return <p>Something went wrong. {error.message}</p>;\r\n}"],"names":[],"mappings":";;;;;AAAA;;AAKe,SAAS,MAAM,EAAE,KAAK,EAAc;IACjD,qBAAO,8OAAC;;YAAE;YAAuB,MAAM,OAAO;;;;;;;AAChD"}}]
+}

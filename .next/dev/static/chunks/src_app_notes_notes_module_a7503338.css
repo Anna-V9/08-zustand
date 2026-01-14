@@ -1,0 +1,23 @@
+/* [project]/src/app/notes/notes.module.css [app-client] (css) */
+.notes-module__rDRRaa__list {
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+.notes-module__rDRRaa__card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.notes-module__rDRRaa__actions {
+  justify-content: space-between;
+  margin-top: 12px;
+  display: flex;
+}
+
+/*# sourceMappingURL=src_app_notes_notes_module_a7503338.css.map*/

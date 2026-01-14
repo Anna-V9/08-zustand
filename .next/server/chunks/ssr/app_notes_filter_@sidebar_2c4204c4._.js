@@ -1,0 +1,3 @@
+module.exports=[32472,a=>{a.v({menuItem:"SidebarNotes-module__RSw1fa__menuItem",menuLink:"SidebarNotes-module__RSw1fa__menuLink",menuList:"SidebarNotes-module__RSw1fa__menuList"})},74460,a=>{"use strict";var b=a.i(7997),c=a.i(95936),d=a.i(32472);let e=["Todo","Work","Personal","Meeting","Shopping"];a.s(["default",0,function(){return(0,b.jsxs)("ul",{className:d.default.menuList,children:[(0,b.jsx)("li",{className:d.default.menuItem,children:(0,b.jsx)(c.default,{className:d.default.menuLink,href:"/notes/filter/all",children:"All notes"})}),e.map(a=>(0,b.jsx)("li",{className:d.default.menuItem,children:(0,b.jsx)(c.default,{className:d.default.menuLink,href:`/notes/filter/${a}`,children:a})},a))]})}])}];
+
+//# sourceMappingURL=app_notes_filter_%40sidebar_2c4204c4._.js.map

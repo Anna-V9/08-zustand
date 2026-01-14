@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../app/%40modal/default.tsx"],"sourcesContent":["const Default = () => null;\r\n\r\nexport default Default;"],"names":[],"mappings":"+QAAgB,IAAM"}

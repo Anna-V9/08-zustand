@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 3, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/src/app/notes/notes.module.css [app-ssr] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"actions\": \"notes-module__rDRRaa__actions\",\n  \"card\": \"notes-module__rDRRaa__card\",\n  \"list\": \"notes-module__rDRRaa__list\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA"}},
+    {"offset": {"line": 12, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/trani/Project/06-notehub-nextjs/src/app/notes/page.tsx"],"sourcesContent":["'use client';\r\n\r\nimport Link from 'next/link';\r\nimport type { Note } from '../../types/note';\r\nimport css from './notes.module.css';\r\n\r\ninterface Props {\r\n  note: Note;\r\n  onDelete: () => void;\r\n}\r\n\r\nexport default function NoteCard({ note, onDelete }: Props) {\r\n  return (\r\n    <li className={css.card}>\r\n      <h3>{note.title}</h3>\r\n      <p>{note.content}</p>\r\n\r\n      <div className={css.actions}>\r\n        <Link href={`/notes/${note.id}`}>View</Link>\r\n        <button onClick={onDelete}>Delete</button>\r\n      </div>\r\n    </li>\r\n  );\r\n}"],"names":[],"mappings":";;;;;AAEA;AAEA;AAJA;;;;AAWe,SAAS,SAAS,EAAE,IAAI,EAAE,QAAQ,EAAS;IACxD,qBACE,8OAAC;QAAG,WAAW,mJAAG,CAAC,IAAI;;0BACrB,8OAAC;0BAAI,KAAK,KAAK;;;;;;0BACf,8OAAC;0BAAG,KAAK,OAAO;;;;;;0BAEhB,8OAAC;gBAAI,WAAW,mJAAG,CAAC,OAAO;;kCACzB,8OAAC,uKAAI;wBAAC,MAAM,CAAC,OAAO,EAAE,KAAK,EAAE,EAAE;kCAAE;;;;;;kCACjC,8OAAC;wBAAO,SAAS;kCAAU;;;;;;;;;;;;;;;;;;AAInC"}}]
+}

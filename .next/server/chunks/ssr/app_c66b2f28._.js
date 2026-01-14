@@ -1,0 +1,3 @@
+module.exports=[73687,a=>{a.v({container:"not-found-module__sxuMuG__container",description:"not-found-module__sxuMuG__description",main:"not-found-module__sxuMuG__main",title:"not-found-module__sxuMuG__title"})},66188,a=>{"use strict";var b=a.i(7997),c=a.i(73687);a.s(["default",0,()=>(0,b.jsxs)("main",{className:c.default.container,children:[(0,b.jsx)("h1",{className:c.default.title,children:"404 - Page not found"}),(0,b.jsx)("p",{className:c.default.description,children:"Sorry, the page you are looking for does not exist."})]})])}];
+
+//# sourceMappingURL=app_c66b2f28._.js.map

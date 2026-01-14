@@ -1,0 +1,3 @@
+module.exports=[88229,a=>{a.v({container:"LayoutNotes-module__Eh5KMq__container",notesWrapper:"LayoutNotes-module__Eh5KMq__notesWrapper",sidebar:"LayoutNotes-module__Eh5KMq__sidebar"})},17490,a=>{"use strict";var b=a.i(7997),c=a.i(88229);a.s(["default",0,({children:a,sidebar:d})=>(0,b.jsxs)("section",{className:c.default.container,children:[(0,b.jsx)("aside",{className:c.default.sidebar,children:d}),(0,b.jsx)("div",{className:c.default.notesWrapper,children:a})]})])}];
+
+//# sourceMappingURL=app_notes_filter_823d304c._.js.map

@@ -1,0 +1,32 @@
+/* [project]/src/app/notes/[id]/NoteDetails.module.css [app-client] (css) */
+.NoteDetails-module__mHfhBW__container {
+  padding: 20px;
+}
+
+.NoteDetails-module__mHfhBW__toolbar {
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  display: flex;
+}
+
+.NoteDetails-module__mHfhBW__createButton {
+  color: #fff;
+  cursor: pointer;
+  background-color: #0070f3;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 12px;
+}
+
+.NoteDetails-module__mHfhBW__createButton:hover {
+  background-color: #005bb5;
+}
+
+.NoteDetails-module__mHfhBW__notesGrid {
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  display: grid;
+}
+
+/*# sourceMappingURL=src_app_notes_%5Bid%5D_NoteDetails_module_4e7b8a90.css.map*/

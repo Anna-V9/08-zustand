@@ -1,0 +1,8 @@
+{
+  "/@modal/(.)notes/[id]/page": "app/@modal/(.)notes/[id]/page.js",
+  "/_global-error/page": "app/_global-error/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/notes/[id]/page": "app/notes/[id]/page.js",
+  "/notes/filter/[...slug]/page": "app/notes/filter/[...slug]/page.js",
+  "/page": "app/page.js"
+}

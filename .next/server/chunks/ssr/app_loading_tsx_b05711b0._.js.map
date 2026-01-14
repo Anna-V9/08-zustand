@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../../app/loading.tsx"],"sourcesContent":["const Loading = () => {\r\n  return <p>Loading, please wait...</p>;\r\n}\r\n\r\nexport default Loading;"],"names":[],"mappings":"wEAAgB,IACP,CAAA,EAAA,EAAA,GAAA,EAAC,IAAA,UAAE"}
