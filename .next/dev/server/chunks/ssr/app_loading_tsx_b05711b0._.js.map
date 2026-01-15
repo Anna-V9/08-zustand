@@ -2,5 +2,5 @@
   "version": 3,
   "sources": [],
   "sections": [
-    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/trani/Project/07-routing-nextjs/app/loading.tsx"],"sourcesContent":["const Loading = () => {\r\n  return <p>Loading, please wait...</p>;\r\n}\r\n\r\nexport default Loading;"],"names":[],"mappings":";;;;;;AAAA,MAAM,UAAU;IACd,qBAAO,8OAAC;kBAAE;;;;;;AACZ;uCAEe"}}]
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/trani/Project/08-zustand/app/loading.tsx"],"sourcesContent":["const Loading = () => {\r\n  return <p>Loading, please wait...</p>;\r\n}\r\n\r\nexport default Loading;"],"names":[],"mappings":";;;;;;AAAA,MAAM,UAAU;IACd,qBAAO,8OAAC;kBAAE;;;;;;AACZ;uCAEe"}}]
 }

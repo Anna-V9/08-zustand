@@ -1,14 +1,18 @@
-import { fetchNotes } from "@/lib/api";
-import type { NoteTag } from "@/types/note";
 import type { Metadata } from "next";
-import NotesClient from "../../[id]/NoteDetails.client";
+import type { NoteTag } from "@/types/note";
+import NotesClient from "./Notes.client";
 
 type Props = {
-  params: { slug: string[] };
+  params: Promise<{ slug?: string[] }>;
 };
 
-export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const value = params.slug[0] ?? "all";
+export async function generateMetadata(
+  { params }: Props
+): Promise<Metadata> {
+  const { slug } = await params;
+
+  const value = slug?.[0] ?? "all";
+
   const tag: NoteTag | undefined =
     value === "all" ? undefined : (value as NoteTag);
 
@@ -27,7 +31,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title,
       description,
       url: `https://yourdomain.com/notes/filter/${value}`,
-      images: ["https://ac.goit.global/fullstack/react/notehub-og-meta.jpg"],
+      images: [
+        "https://ac.goit.global/fullstack/react/notehub-og-meta.jpg",
+      ],
     },
   };
 }
