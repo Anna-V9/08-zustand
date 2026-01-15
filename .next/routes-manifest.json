@@ -77,6 +77,12 @@
       "regex": "^/_not\\-found(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/_not\\-found(?:/)?$"
+    },
+    {
+      "page": "/notes/action/create",
+      "regex": "^/notes/action/create(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/notes/action/create(?:/)?$"
     }
   ],
   "dataRoutes": [],

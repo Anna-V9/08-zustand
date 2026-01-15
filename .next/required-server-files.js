@@ -140,7 +140,7 @@ self.__SERVER_FILES_MANIFEST={
       "isExperimentalCompile": false
     }
   },
-  "appDir": "C:\\Users\\trani\\Project\\07-routing-nextjs",
+  "appDir": "C:\\Users\\trani\\Project\\08-zustand",
   "relativeAppDir": "",
   "files": [
     ".next\\routes-manifest.json",

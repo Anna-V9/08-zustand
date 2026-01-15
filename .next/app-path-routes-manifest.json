@@ -3,6 +3,7 @@
   "/_global-error/page": "/_global-error",
   "/_not-found/page": "/_not-found",
   "/notes/[id]/page": "/notes/[id]",
+  "/notes/action/create/page": "/notes/action/create",
   "/notes/filter/[...slug]/page": "/notes/filter/[...slug]",
   "/page": "/"
 }
