@@ -4,53 +4,62 @@ import { useState, useEffect } from "react";
 import css from "./NoteForm.module.css";
 import { useNoteStore, DraftNote } from "@/lib/store/noteStore";
 import { useRouter } from "next/navigation";
+import { useMutation, useQueryClient } from "@tanstack/react-query";
 
 interface NoteFormProps {
   onSuccess?: () => void;
   onCancel?: () => void;
 }
 
+const createNote = async (note: DraftNote) => {
+  const res = await fetch("/api/notes", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(note),
+  });
+
+  if (!res.ok) {
+    throw new Error("Failed to create note");
+  }
+
+  return res.json();
+};
+
 const NoteForm: React.FC<NoteFormProps> = ({ onSuccess, onCancel }) => {
   const router = useRouter();
+  const queryClient = useQueryClient();
   const { draft, setDraft, clearDraft } = useNoteStore();
 
-  
   const [form, setForm] = useState<DraftNote>(draft);
 
-  
   useEffect(() => {
     setDraft(form);
   }, [form, setDraft]);
 
-  
+  const mutation = useMutation({
+    mutationFn: createNote,
+    onSuccess: () => {
+      clearDraft();
+      queryClient.invalidateQueries({ queryKey: ["notes"] });
+      onSuccess?.();
+      router.back();
+    },
+  });
+
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>
+    e: React.ChangeEvent<
+      HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement
+    >
   ) => {
     const { name, value } = e.target;
     setForm((prev) => ({ ...prev, [name]: value }));
   };
 
-  
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-
-    try {
-      
-      await fetch("/api/notes", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
-
-      clearDraft(); 
-      onSuccess?.();
-      router.back(); 
-    } catch (err) {
-      console.error("Failed to create note", err);
-    }
+    mutation.mutate(form);
   };
 
-  
   const handleCancel = () => {
     onCancel?.();
     router.back();
@@ -103,12 +112,20 @@ const NoteForm: React.FC<NoteFormProps> = ({ onSuccess, onCancel }) => {
       </div>
 
       <div className={css.actions}>
-        <button type="button" className={css.cancelButton} onClick={handleCancel}>
+        <button
+          type="button"
+          className={css.cancelButton}
+          onClick={handleCancel}
+        >
           Cancel
         </button>
 
-        <button type="submit" className={css.submitButton}>
-          Create note
+        <button
+          type="submit"
+          className={css.submitButton}
+          disabled={mutation.isPending}
+        >
+          {mutation.isPending ? "Creating..." : "Create note"}
         </button>
       </div>
     </form>
